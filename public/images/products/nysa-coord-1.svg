@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1066" width="800" height="1066">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#BDA48B" />
+      <stop offset="100%" stop-color="#7A624E" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="38%" r="45%">
+      <stop offset="0%" stop-color="#FBF7F1" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#FBF7F1" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="jaali" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M24 0 L48 24 L24 48 L0 24 Z" fill="none" stroke="#FBF7F1" stroke-opacity="0.09" stroke-width="1"/>
+      <circle cx="24" cy="24" r="3" fill="none" stroke="#FBF7F1" stroke-opacity="0.09" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="1066" fill="url(#bg)"/>
+  <rect width="800" height="1066" fill="url(#jaali)"/>
+  <rect width="800" height="1066" fill="url(#glow)"/>
+  
+  <!-- Outer delicate hairline frame -->
+  <rect x="34" y="34" width="732" height="998" fill="none" stroke="#FBF7F1" stroke-opacity="0.28" stroke-width="1.2"/>
+  
+  <!-- Jharokha arch silhouette -->
+  <path d="M 160 890 L 160 400 C 160 280, 270 235, 400 155 C 530 235, 640 280, 640 400 L 640 890 Z"
+        fill="none" stroke="#FBF7F1" stroke-opacity="0.45" stroke-width="1.8"/>
+  <path d="M 185 865 L 185 408 C 185 304, 285 262, 400 190 C 515 262, 615 304, 615 408 L 615 865 Z"
+        fill="#FBF7F1" fill-opacity="0.04" stroke="#FBF7F1" stroke-opacity="0.22" stroke-width="1"/>
+  
+  <!-- Bindu dot above arch -->
+  <circle cx="400" cy="126" r="6" fill="#FBF7F1" fill-opacity="0.85"/>
+
+  <!-- Silk wave ornament inside arch -->
+  <path d="M 210 580 Q 310 510 400 565 T 590 545" fill="none" stroke="#FBF7F1" stroke-opacity="0.35" stroke-width="1.5"/>
+  <path d="M 210 610 Q 320 545 415 595 T 590 580" fill="none" stroke="#FBF7F1" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Typography -->
+  <text x="400" y="455" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" letter-spacing="8" fill="#FBF7F1" fill-opacity="0.78">RERA BOUTIQUE</text>
+  <text x="400" y="695" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="600" letter-spacing="4" fill="#FBF7F1">NYSA CO-ORD</text>
+  <text x="400" y="742" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" letter-spacing="3" fill="#FBF7F1" fill-opacity="0.82">CHANDERI ZARI STRIPE</text>
+  <text x="400" y="965" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" letter-spacing="4" fill="#FBF7F1" fill-opacity="0.48">PLACEHOLDER ARTWORK Â· REPLACE WITH STUDIO PHOTO</text>
+</svg>

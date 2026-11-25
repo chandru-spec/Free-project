@@ -1,0 +1,182 @@
+.page {
+  padding-top: calc(var(--header-height) + 46px);
+  padding-bottom: 84px;
+  background-color: var(--ivory);
+}
+
+.breadcrumb {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+}
+
+.galleryCol {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mainImageWrap {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  border-radius: 22px;
+  overflow: hidden;
+  background: var(--blush);
+  border: 1px solid rgba(201, 164, 106, 0.3);
+  cursor: zoom-in;
+}
+
+.mainImageWrap.isZoomed {
+  cursor: zoom-out;
+}
+
+.spinBadgeBtn {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  z-index: 4;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(20, 10, 14, 0.86);
+  color: var(--gold-glow);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--border-gold);
+}
+
+.thumbStrip {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.thumbBtn {
+  position: relative;
+  width: 76px;
+  aspect-ratio: 3 / 4;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  flex-shrink: 0;
+}
+
+.thumbBtnActive {
+  border-color: var(--maroon);
+}
+
+.infoCol {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 600;
+  line-height: 1.06;
+}
+
+.priceRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.price {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--maroon);
+}
+
+.mrp {
+  font-size: 16px;
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.discountTag {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(94, 34, 48, 0.1);
+  color: var(--maroon);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ctaGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.pincodeBox {
+  padding: 16px;
+  border-radius: 16px;
+  background: #f5ede3;
+  border: 1px solid var(--border-ink);
+}
+
+.pincodeForm {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.pincodeInput {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border-ink);
+  background: #ffffff;
+  font-size: 14px;
+}
+
+.accordionItem {
+  border-top: 1px solid var(--border-ink);
+}
+
+.accordionBtn {
+  width: 100%;
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.relatedSection {
+  margin-top: 72px;
+  padding-top: 48px;
+  border-top: 1px solid var(--border-ink);
+}
+
+@media (min-width: 960px) {
+  .mainGrid {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 56px;
+    align-items: start;
+  }
+
+  .ctaGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
